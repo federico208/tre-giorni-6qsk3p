@@ -25,40 +25,38 @@
       id: 'venerdi', data: '2026-10-02', nome: 'Venerdì 2 ottobre', colore: 'var(--ven)',
       meteo: 'Sole e nuvole · 21° di giorno, 19° quando atterri',
       fermate: [
-        { nome: 'London City', testo: 'Atterri, io sono agli arrivi. Da lì a casa sono pochi minuti di taxi.', ora: '18:50', come: 'In aereo, fino a London City.', maps: 'London City Airport' },
-        { nome: 'Casa, Canary Wharf', testo: 'La cena la cucino io. Tu ti siedi e basta.', ora: '19:20', come: 'Taxi dall\'aeroporto, pochi minuti.', maps: 'Canary Wharf, London' },
-        { nome: 'Se ti va', testo: 'Due passi sulle banchine illuminate. Se non ti va, divano.', ora: '21:30', come: 'A piedi da casa.', maps: 'Canary Wharf, London' }
+        { nome: 'London City', testo: 'Ehi ehi! Welcome to London.', ora: '18:50', come: 'In aereo, fino a London City.', maps: 'London City Airport' },
+        { nome: 'DLR fino a Poplar', testo: 'Da Poplar a casa sono otto, dieci minuti.', ora: '19:20', come: 'In DLR fino a Poplar.', maps: 'Poplar DLR station, London' },
+        { nome: 'Cena insieme', testo: 'E dopo due passi sulla banchina illuminata.', ora: '20:30', maps: 'Canary Wharf, London' }
       ]
     },
     {
       id: 'sabato', data: '2026-10-03', nome: 'Sabato 3 ottobre', colore: 'var(--sab)',
       meteo: 'Foschia al mattino, poi sole e nuvole · da 15° a 20°',
       fermate: [
-        { nome: 'Colazione a casa', testo: 'Americano, con calma. Non si esce prima di averlo finito.', ora: '09:00', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
-        { nome: 'Elizabeth line', testo: 'Da Canary Wharf a Tottenham Court Road in una dozzina di minuti.', ora: '10:00', come: 'Elizabeth line da Canary Wharf, direzione ovest, fino a Tottenham Court Road.', maps: 'Canary Wharf Elizabeth line station' },
-        { nome: 'Seven Dials e Neal\'s Yard', testo: 'Cortili colorati a due passi da Covent Garden.', ora: '10:20', come: 'A piedi da Tottenham Court Road, una decina di minuti.', maps: 'Neal\'s Yard, London' },
-        { nome: 'Kiko, James Street 22', testo: 'Qui comandi tu. Aperto dalle 10 alle 20.', ora: '10:50', come: 'A piedi, attraverso Covent Garden.', maps: 'KIKO Milano, 22 James Street, London' },
-        { nome: 'Goodwin\'s Court', testo: 'Un vicolo nascosto tra St Martin\'s Lane e Bedfordbury, lo trovi solo se lo cerchi.', ora: '11:45', come: 'A piedi, verso St Martin\'s Lane.', maps: 'Goodwin\'s Court, London' },
-        { nome: 'St James\'s Park', testo: 'Una tisana a un chiosco del parco. Poi, tra le 14:30 e le 15, danno da mangiare ai pellicani vicino a Duck Island Cottage.', ora: '14:00', come: 'A piedi, da Trafalgar Square lungo The Mall.', maps: 'Duck Island Cottage, St James\'s Park, London', icona: 'pellicano' },
+        { nome: 'Colazione a casa', testo: '', ora: '09:00', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
+        { nome: 'Elizabeth line', testo: 'Da Canary Wharf dritti fino a Tottenham Court Road.', ora: '10:30', come: 'Elizabeth line da Canary Wharf, direzione ovest, fino a Tottenham Court Road.', maps: 'Canary Wharf Elizabeth line station' },
+        { nome: 'Seven Dials e Neal\'s Yard', testo: 'Cortili colorati a due passi da Covent Garden, sperando che il cielo non sia troppo nuvoloso.', ora: '10:50', da: 'Tottenham Court Road station, London', maps: 'Neal\'s Yard, London' },
+        { nome: 'Kiko, James Street 22', testo: 'Qui comandi tu. Aperto dalle 10 alle 20.', ora: '11:15', come: 'A piedi, attraverso Covent Garden.', maps: 'KIKO Milano, 22 James Street, London' },
+        { nome: 'Goodwin\'s Court', testo: 'L\'ho scoperto un giorno di marzo che ero salito a Londra, e ho pensato a te. Dicono che abbia ispirato la Diagon Alley di Harry Potter.', ora: '12:00', come: 'A piedi, verso St Martin\'s Lane.', maps: 'Goodwin\'s Court, London' },
+        { nome: 'Pranzo', testo: 'Qualcosa di buono in zona, prima del parco.', ora: '12:30', come: 'A piedi, siamo già lì.', maps: 'Covent Garden, London' },
+        { nome: 'St James\'s Park', testo: 'Due passi nel parco e, se ce la facciamo, andiamo a vedere i pellicani che mangiano vicino a Duck Island Cottage, di solito tra le 14:30 e le 15.', ora: '14:00', come: 'A piedi, da Trafalgar Square lungo The Mall.', maps: 'Duck Island Cottage, St James\'s Park, London', icona: 'pellicano' },
         { nome: 'Chelsea Physic Garden', testo: 'Il giardino botanico più antico di Londra. Di solito il sabato è chiuso, questo weekend apre gratis dalle 10 alle 17, ultimo ingresso alle 16:30. Proviamo, se c\'è posto.', ora: '15:30', come: 'District o Circle line da St James\'s Park a Sloane Square, poi a piedi.', maps: 'Chelsea Physic Garden, London', icona: 'fiori' },
         { nome: 'Albert Bridge al tramonto', testo: 'Alle 18:33 tramonta il sole e il ponte si accende con 4.000 luci. Agli ingressi c\'è ancora il cartello che chiede ai soldati di rompere il passo.', ora: '18:30', come: 'A piedi lungo il fiume, sul Chelsea Embankment.', maps: 'Albert Bridge, London', icona: 'ponte' },
-        { nome: 'Cittie of Yorke, High Holborn', testo: 'Cena in un pub dove si beve dal 1430, nei séparé di legno della sala grande.', ora: '20:00', come: 'In taxi.', maps: 'Cittie of Yorke, High Holborn, London', icona: 'lampada' },
-        { nome: 'A casa in battello', testo: 'Il fiume di notte, sotto i ponti illuminati, fino a Canary Wharf.', ora: '22:00', come: 'A piedi fino al molo di Blackfriars, poi battello fino a Canary Wharf.', maps: 'Blackfriars Pier, London', icona: 'battello' }
+        { nome: 'Cittie of Yorke, High Holborn', testo: 'Cena in un pub dove si beve dal 1430, nei séparé di legno della sala grande. Ho già prenotato.', ora: '20:00', come: 'In taxi.', maps: 'Cittie of Yorke, High Holborn, London', icona: 'lampada' },
+        { nome: 'A casa in battello', testo: 'Il fiume di notte, sotto i ponti illuminati, fino a Canary Wharf.', ora: '22:00', come: 'A piedi fino al molo di Blackfriars, poi Uber Boat fino a Canary Wharf.', maps: 'Blackfriars Pier, London', icona: 'battello' }
       ]
     },
     {
       id: 'domenica', data: '2026-10-04', nome: 'Domenica 4 ottobre', colore: 'var(--dom)',
       meteo: 'Sole e nuvole · da 15° a 20°',
       fermate: [
-        { nome: 'Colazione a casa', testo: 'Americano, come da regolamento.', ora: '09:30', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
-        { nome: 'Mudchute', testo: 'Una fattoria vera in mezzo ai grattacieli, lama e pecore compresi.', ora: '10:30', come: 'DLR da Canary Wharf, direzione Lewisham, fino a Mudchute.', maps: 'Mudchute Park and Farm, London' },
-        { nome: 'Island Gardens', testo: 'La vista su Greenwich che dipinse Canaletto, un veneziano a Londra.', ora: '11:45', come: 'A piedi dalla fattoria, pochi minuti.', maps: 'Island Gardens, London' },
-        { nome: 'Il tunnel', testo: 'A piedi sotto il Tamigi, dal 1902.', ora: '12:00', come: 'L\'ingresso è la cupola dentro Island Gardens.', maps: 'Greenwich Foot Tunnel, London' },
-        { nome: 'Painted Hall', testo: 'L\'edificio del quadro, visto da dentro: un soffitto dipinto tra il 1707 e il 1726.', ora: '12:15', come: 'A piedi dall\'uscita del tunnel, vicino al Cutty Sark.', maps: 'Painted Hall, Old Royal Naval College, Greenwich', icona: 'soffitto' },
-        { nome: 'Pranzo', testo: 'Un roast della domenica vicino al fiume.', ora: '13:30', come: 'A piedi, a Greenwich.', maps: 'Sunday roast Greenwich riverside' },
-        { nome: 'A casa in battello', testo: '', ora: '15:00', come: 'Dal molo di Greenwich, battello fino a Canary Wharf.', maps: 'Greenwich Pier, London', icona: 'battello' },
-        { nome: 'Pomeriggio libero', testo: 'Divano, oppure una delle fermate a richiesta.', ora: '16:00', come: 'Dipende da cosa scegli.', maps: 'Canary Wharf, London' },
-        { nome: 'Cena a casa', testo: 'Presto, niente sveglie tristi.', ora: '19:00', come: 'Siamo a casa.', maps: 'Canary Wharf, London' }
+        { nome: 'Primo caffè a casa', testo: 'Americano, come da regolamento.', ora: '09:30', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
+        { nome: 'Aether Coffee Lab', testo: 'Il secondo caffè lo proviamo da Aether, una torrefazione di Hackney che ha un locale qui a Canary Wharf. Io i croissant e i pain au chocolat li ho assaggiati, e sembrano fatti in Francia.', ora: '10:30', come: 'In Park Drive, vicino a Wood Wharf.', maps: 'Aether Coffee Lab, 11 Park Drive, London E14 9GG', icona: 'tazza' },
+        { nome: 'Island Gardens', testo: 'Il giardino in fondo all\'Isle of Dogs, con Greenwich proprio di fronte, dall\'altra parte del fiume.', ora: '11:45', come: 'In DLR, direzione Lewisham, fino a Island Gardens.', maps: 'Island Gardens, London' },
+        { nome: 'Il tunnel', testo: 'A piedi sotto il Tamigi, dal 1902, e si esce a Greenwich.', ora: '12:00', come: 'L\'ingresso è la cupola dentro Island Gardens.', maps: 'Greenwich Foot Tunnel, London' },
+        { nome: 'Pomeriggio libero', testo: 'Greenwich, il divano, oppure una delle fermate a richiesta.', ora: '12:30', come: 'Dipende da cosa scegli.', maps: 'Greenwich, London' },
+        { nome: 'Cena libera', testo: 'Decidiamo al momento.', ora: '19:30', maps: 'Canary Wharf, London' }
       ]
     }
   ];
@@ -78,7 +76,12 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
-  function mapsUrl(q) {
+  function mapsUrl(q, da) {
+    // con "da" apre il percorso a piedi da quel punto
+    if (da) {
+      return 'https://www.google.com/maps/dir/?api=1&origin=' + encodeURIComponent(da) +
+        '&destination=' + encodeURIComponent(q) + '&travelmode=walking';
+    }
     return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
   }
   function minuti(hhmm) {
@@ -111,9 +114,9 @@
             (f.testo ? '<p class="testo">' + esc(f.testo) + '</p>' : '') +
             '<dl class="dettagli">' +
               '<div><dt>Orario indicativo</dt><dd>' + f.ora + '</dd></div>' +
-              '<div><dt>Come ci arriviamo</dt><dd>' + esc(f.come) + '</dd></div>' +
+              (f.come ? '<div><dt>Come ci arriviamo</dt><dd>' + esc(f.come) + '</dd></div>' : '') +
             '</dl>' +
-            '<a class="maps" href="' + mapsUrl(f.maps) + '" target="_blank" rel="noopener noreferrer">Apri in Maps</a>' +
+            '<a class="maps" href="' + mapsUrl(f.maps, f.da) + '" target="_blank" rel="noopener noreferrer">Apri in Maps</a>' +
           '</div></div>' +
         '</div>' +
       '</li>';
