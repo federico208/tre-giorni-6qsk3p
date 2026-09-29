@@ -44,7 +44,7 @@
         { nome: 'Chelsea Physic Garden', testo: 'Il giardino botanico più antico di Londra. Di solito il sabato è chiuso, questo weekend apre gratis dalle 10 alle 17, ultimo ingresso alle 16:30. Proviamo, se c\'è posto.', ora: '15:30', come: 'District o Circle line da St James\'s Park a Sloane Square, poi a piedi.', maps: 'Chelsea Physic Garden, London', icona: 'fiori' },
         { nome: 'Albert Bridge al tramonto', testo: 'Alle 18:33 tramonta il sole e il ponte si accende con 4.000 luci. Agli ingressi c\'è ancora il cartello che chiede ai soldati di rompere il passo.', ora: '18:30', come: 'A piedi lungo il fiume, sul Chelsea Embankment.', maps: 'Albert Bridge, London', icona: 'ponte' },
         { nome: 'Cittie of Yorke, High Holborn', testo: 'Cena in un pub dove si beve dal 1430, nei séparé di legno della sala grande. Ho già prenotato.', ora: '20:00', come: 'In taxi.', maps: 'Cittie of Yorke, High Holborn, London', icona: 'lampada' },
-        { nome: 'A casa in battello', testo: 'Il fiume di notte, sotto i ponti illuminati, fino a Canary Wharf.', ora: '22:00', come: 'A piedi fino al molo di Blackfriars, poi Uber Boat fino a Canary Wharf.', maps: 'Blackfriars Pier, London', icona: 'battello' }
+        { nome: 'A casa in battello', testo: 'Il fiume di notte, sotto i ponti illuminati, fino a Canary Wharf.', ora: '22:00', come: 'Fino al molo di Bankside, dall\'altra parte del Millennium Bridge, poi Uber Boat fino a Canary Wharf. Nel weekend a Blackfriars non si ferma.', maps: 'Bankside Pier, London', icona: 'battello' }
       ]
     },
     {
@@ -52,7 +52,7 @@
       meteo: 'Sole e nuvole · da 15° a 20°',
       fermate: [
         { nome: 'Primo caffè a casa', testo: 'Americano, come da regolamento.', ora: '09:30', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
-        { nome: 'Aether Coffee Lab', testo: 'Il secondo caffè lo proviamo da Aether, una torrefazione di Hackney che ha un locale qui a Canary Wharf. Io i croissant e i pain au chocolat li ho assaggiati, e sembrano fatti in Francia.', ora: '10:30', come: 'In Park Drive, vicino a Wood Wharf.', maps: 'Aether Coffee Lab, 11 Park Drive, London E14 9GG', icona: 'tazza' },
+        { nome: 'Aether Coffee Lab', testo: 'Il secondo caffè lo proviamo da Aether, una torrefazione di Hackney che ha un locale qui a Canary Wharf. Io croissant e pain au chocolat li ho assaggiati, e mi sono sembrati francesi.', ora: '10:30', come: 'In Park Drive, vicino a Wood Wharf.', maps: 'Aether Coffee Lab, 11 Park Drive, London E14 9GG', icona: 'tazza' },
         { nome: 'Island Gardens', testo: 'Il giardino in fondo all\'Isle of Dogs, con Greenwich proprio di fronte, dall\'altra parte del fiume.', ora: '11:45', come: 'In DLR, direzione Lewisham, fino a Island Gardens.', maps: 'Island Gardens, London' },
         { nome: 'Il tunnel', testo: 'A piedi sotto il Tamigi, dal 1902, e si esce a Greenwich.', ora: '12:00', come: 'L\'ingresso è la cupola dentro Island Gardens.', maps: 'Greenwich Foot Tunnel, London' },
         { nome: 'Pomeriggio libero', testo: 'Greenwich, il divano, oppure una delle fermate a richiesta.', ora: '12:30', come: 'Dipende da cosa scegli.', maps: 'Greenwich, London' },
