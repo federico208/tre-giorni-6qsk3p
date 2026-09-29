@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#1B2A4A">
+  <title>Tre giorni a Londra</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23F4F1EA'/%3E%3Crect x='6' y='5' width='5' height='22' rx='2.5' fill='%230A9396'/%3E%3Crect x='13.5' y='5' width='5' height='22' rx='2.5' fill='%236A4C93'/%3E%3Crect x='21' y='5' width='5' height='22' rx='2.5' fill='%231D4E89'/%3E%3C/svg%3E">
+  <link rel="preload" href="/fonts/hanken-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="testata">
+    <div class="insegna">
+      <h1>Tre giorni a Londra</h1>
+    </div>
+    <p class="sottotitolo">Poche fermate fisse, il resto lo scegli tu.</p>
+    <p class="contatore" id="contatore" hidden></p>
+  </header>
+
+  <nav class="indice" aria-label="Linee">
+    <a href="#venerdi" style="--c:var(--ven)"><span class="dot"></span>Venerdì</a>
+    <a href="#sabato" style="--c:var(--sab)"><span class="dot"></span>Sabato</a>
+    <a href="#domenica" style="--c:var(--dom)"><span class="dot"></span>Domenica</a>
+    <a href="#request-stop" style="--c:var(--rosso)"><span class="dot"></span>Request stop</a>
+  </nav>
+
+  <main id="linee"></main>
+
+  <section class="lunedi" aria-labelledby="lunedi-t">
+    <h2 id="lunedi-t" class="nome-linea nome-linea--lunedi">Lunedì 5 ottobre</h2>
+    <p>All'alba ti accompagno a City.</p>
+  </section>
+
+  <section id="request-stop" class="request" aria-labelledby="request-t">
+    <h2 id="request-t" class="nome-linea nome-linea--rosso">Request stop</h2>
+    <p class="request-intro">Come sui bus di Londra: si ferma solo se lo chiedi. Tocca quello che ti va, anche niente.</p>
+    <ul class="carte" id="carte"></ul>
+  </section>
+
+  <aside class="pratico">
+    <ul>
+      <li>ETA: controlla che sia valida sul passaporto con cui viaggi.</li>
+      <li>Scarpe comode: si cammina parecchio.</li>
+      <li>Una giacca leggera per la sera, di giorno fa caldo per essere ottobre.</li>
+      <li>Metro e battelli si pagano con la carta contactless o il telefono.</li>
+    </ul>
+  </aside>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
