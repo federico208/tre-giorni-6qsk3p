@@ -574,6 +574,33 @@ main { padding: 0 var(--gutter); }
   box-shadow: 0 0 0 2px var(--rosso), 0 12px 22px -14px rgba(192, 40, 31, .7);
 }
 
+.manda {
+  margin-top: 18px;
+  padding: 14px 16px 16px;
+  background: #FFFDF8;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(35, 48, 59, .1), 0 10px 20px -14px rgba(35, 48, 59, .45);
+  animation: compare .3s ease both;
+}
+.manda[hidden] { display: none; }
+.manda-riepilogo { margin: 0 0 12px; font-size: 16px; }
+.manda-bottone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  background: var(--rosso);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 14px -6px rgba(192, 40, 31, .7);
+}
+.manda-bottone:focus-visible { outline: 2px solid var(--inchiostro); outline-offset: 2px; }
+
 /* ---------- Pratico ---------- */
 .pratico {
   margin-top: 40px;

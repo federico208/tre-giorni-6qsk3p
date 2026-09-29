@@ -67,7 +67,7 @@
     { id: 'horizon-22', nome: 'Horizon 22', testo: 'Il piano panoramico gratuito più alto di Londra. Sabato fino alle 17.' },
     { id: 'npg', nome: 'National Portrait Gallery', testo: 'Se piove: il Portrait Award è gratuito fino al 7 ottobre.' },
     { id: 'japan-matsuri', nome: 'Japan Matsuri', testo: 'Domenica a Trafalgar Square, dalle 10 alle 20.' },
-    { id: 'divano', nome: 'Divano, coperta e un film scelto da te.', testo: '' }
+    { id: 'divano', nome: 'Divano, coperta e un film scelto da te.', breve: 'divano, coperta e film', testo: '' }
   ];
 
   /* ---------- Utilità ---------- */
@@ -152,6 +152,28 @@
     '</li>';
   }).join('');
 
+  /* ---------- Messaggio WhatsApp con le scelte ---------- */
+  // senza numero: WhatsApp apre la lista dei contatti e lei sceglie "Fede."
+  var manda = document.getElementById('manda');
+  var mandaRiepilogo = document.getElementById('manda-riepilogo');
+  var mandaBottone = document.getElementById('manda-bottone');
+
+  function elenco(nomi) {
+    if (nomi.length < 2) return nomi.join('');
+    return nomi.slice(0, -1).join(', ') + ' e ' + nomi[nomi.length - 1];
+  }
+
+  function aggiornaManda() {
+    var nomi = CARTE.filter(function (c) { return scelte.indexOf(c.id) !== -1; })
+      .map(function (c) { return c.breve || c.nome; });
+    manda.hidden = nomi.length === 0;
+    if (!nomi.length) return;
+    mandaRiepilogo.textContent = 'Hai scelto: ' + elenco(nomi) + '.';
+    var testo = 'Request stop! Mi va: ' + elenco(nomi) + '.';
+    mandaBottone.href = 'https://wa.me/?text=' + encodeURIComponent(testo);
+  }
+  aggiornaManda();
+
   ul.addEventListener('click', function (e) {
     var b = e.target.closest('.ferma');
     if (!b) return;
@@ -163,6 +185,7 @@
     scelte = scelte.filter(function (x) { return x !== id; });
     if (on) scelte.push(id);
     try { localStorage.setItem(CHIAVE, JSON.stringify(scelte)); } catch (err) { /* niente */ }
+    aggiornaManda();
   });
 
   /* ---------- Ora di Londra ---------- */
