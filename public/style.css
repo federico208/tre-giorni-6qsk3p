@@ -417,10 +417,16 @@ main { padding: 0 var(--gutter); }
   line-height: 1.4;
 }
 
+.azioni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 6px;
+}
 .maps {
   display: inline-flex;
   align-items: center;
-  margin: 0 6px;
+  margin: 0;
   min-height: 40px;
   padding: 0 16px;
   border-radius: 999px;
@@ -432,6 +438,82 @@ main { padding: 0 var(--gutter); }
   transition: background .15s ease, color .15s ease;
 }
 .maps:hover, .maps:active { background: var(--c); color: #fff; }
+
+/* ---------- Il bivio ---------- */
+.bivio { grid-template-rows: auto auto; }
+.bivio .corpo { padding: 8px 4px 4px 6px; }
+.nome-bivio { margin: 2px 0 0; }
+.testo-bivio { margin: 4px 0 0; font-size: 16px; }
+/* i due rami prendono tutta la larghezza, affiancati */
+.rami {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 10px;
+  margin: 10px 0 18px;
+}
+.ramo {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #FFFDF8;
+  border: 2px solid var(--riga);
+  border-top: 5px solid var(--c);
+  border-radius: 8px;
+  padding: 0 0 12px;
+  transition: border-color .2s ease, box-shadow .2s ease, opacity .2s ease, transform .2s ease;
+}
+.scegli-ramo {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 64px;
+  padding: 10px 10px 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.scegli-ramo:focus-visible { outline: 2px solid var(--c); outline-offset: -2px; border-radius: 6px; }
+.ramo-etichetta {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--c);
+}
+.ramo-nome {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.ramo-testo { margin: 0 10px 10px; font-size: 15px; line-height: 1.45; }
+.ramo .dettagli { margin: 0 8px 10px; padding: 8px 9px; }
+.ramo .dettagli dd { font-size: 14px; }
+.ramo .azioni { margin: 0 8px; }
+.ramo .maps { min-height: 38px; padding: 0 12px; font-size: 14px; }
+.ramo.scelto {
+  border-color: var(--c);
+  box-shadow: 0 0 0 1px var(--c), 0 10px 20px -12px rgba(35, 48, 59, .5);
+  transform: translateY(-2px);
+}
+.bivio.deciso .ramo:not(.scelto) { opacity: .55; }
+.ramo.scelto .scegli-ramo::after {
+  content: "Si va di qua";
+  margin-top: 4px;
+  align-self: flex-start;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--c);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
 
 /* ---------- Sei qui ---------- */
 .sei-qui {

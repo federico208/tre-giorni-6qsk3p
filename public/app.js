@@ -26,48 +26,49 @@
       meteo: 'Sole e nuvole · 21° di giorno, 19° quando atterri',
       fermate: [
         { nome: 'London City', testo: 'Ehi ehi! Welcome to London.', ora: '18:50', come: 'In aereo, fino a London City.', maps: 'London City Airport' },
-        { nome: 'DLR fino a Poplar', testo: 'Da Poplar a casa sono otto, dieci minuti.', ora: '19:20', come: 'In DLR fino a Poplar.', maps: 'Poplar DLR station, London' },
+        { nome: 'Poplar', testo: 'Da Poplar a casa sono otto, dieci minuti.', ora: '19:20', come: 'DLR da London City fino a Poplar, 12 minuti.', maps: 'Poplar DLR station, London' },
         { nome: 'Cena insieme', testo: 'E dopo due passi sulla banchina illuminata.', ora: '20:30', maps: 'Canary Wharf, London' }
       ]
     },
     {
       id: 'sabato', data: '2026-10-03', nome: 'Sabato 3 ottobre', colore: 'var(--sab)',
-      meteo: 'Foschia al mattino, poi sole e nuvole · da 15° a 20°',
+      meteo: 'Foschia al mattino, poi sole e nuvole · da 14° a 21°',
       fermate: [
         { nome: 'Colazione a casa', testo: '', ora: '09:00', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
-        { nome: 'Elizabeth line', testo: 'Da Canary Wharf dritti fino a Bond Street.', ora: '09:50', come: 'Elizabeth line da Canary Wharf, uscita Davies Street.', maps: 'Bond Street station Davies Street entrance, London' },
-        { nome: 'La svendita', testo: 'Qui comandi tu. Primo piano, aperta dalle 10 alle 17.', ora: '10:15', come: 'A piedi, è davanti all\'uscita.', maps: '58 Davies Street, London W1K 5JF' },
-        { nome: 'St James\'s Park', testo: 'Ci torniamo, stavolta con calma. Pranzo al parco, a un chiosco o dove ci va.', ora: '12:30', come: 'A piedi da Mayfair, attraverso Green Park.', maps: 'St James\'s Park, London' },
-        { nome: 'V&A', testo: 'La più grande collezione al mondo di arti decorative e design, gratis. Gioielli, moda e le Cast Courts con il David di Michelangelo in gesso. Se ci va, un tè nelle sale Morris.', ora: '14:30', come: 'District o Circle line da St James\'s Park a South Kensington.', maps: 'Victoria and Albert Museum, Cromwell Road, London', icona: 'soffitto' },
-        { nome: 'Albert Bridge al tramonto', testo: 'Alle 18:33 tramonta il sole e il ponte si accende con 4.000 luci. Agli ingressi c\'è ancora il cartello che chiede ai soldati di rompere il passo.', ora: '18:30', come: 'A piedi da South Kensington attraverso Chelsea, fino al Chelsea Embankment.', maps: 'Albert Bridge, London', icona: 'ponte' },
-        { nome: 'Cittie of Yorke, High Holborn', testo: 'Cena in un pub dove si beve dal 1430, nei séparé di legno della sala grande. Ho già prenotato.', ora: '20:00', come: 'In taxi.', maps: 'Cittie of Yorke, High Holborn, London', icona: 'lampada' },
-        { nome: 'A casa in battello', testo: 'Il fiume di notte, sotto i ponti illuminati, fino a Canary Wharf.', ora: '22:00', come: 'Fino al molo di Bankside, dall\'altra parte del Millennium Bridge, poi Uber Boat fino a Canary Wharf. Nel weekend a Blackfriars non si ferma.', maps: 'Bankside Pier, London', icona: 'battello' }
+        { nome: 'Bond Street', testo: 'Da Canary Wharf dritti in centro, senza cambi.', ora: '09:50', come: 'Elizabeth line da Canary Wharf a Bond Street, 15 minuti, uscita Davies Street. Da casa circa mezz\'ora in tutto.', maps: 'Bond Street station Davies Street entrance, London' },
+        { nome: 'La svendita', testo: 'Ticket alla mano e si comincia. Primo piano, aperta dalle 10 alle 17.', ora: '10:15', come: 'A piedi, è davanti all\'uscita.', maps: '58 Davies Street, London W1K 5JF' },
+        { nome: 'Il bivio', testo: 'Scegli tu da che parte andiamo.', ora: '12:15', rami: [
+          { id: 'st-james', etichetta: 'Ramo 1', nome: 'St James\'s Park', testo: 'Ci torniamo, stavolta con calma.', come: 'A piedi da Davies Street attraverso Green Park, circa mezz\'ora.', maps: 'St James\'s Park, London', icona: 'pellicano' },
+          { id: 'mayfair', etichetta: 'Ramo 2', nome: 'Mount Street Gardens e Shepherd Market', testo: 'Un giardino nascosto tra due chiese storiche, con i platani e le panchine. Poi Shepherd Market, il pezzo di Mayfair che sembra un villaggio, nato dove si teneva la fiera che ha dato il nome al quartiere.', come: 'A piedi, 10 minuti da Davies Street al giardino e altri 10 fino a Shepherd Market.', maps: 'Mount Street Gardens, London', icona: 'fiori' }
+        ] },
+        { nome: 'Pranzo', testo: 'Da scegliere insieme. Al parco, a un chiosco, se siamo a St James\'s. Nei caffè di Shepherd Market o da Mercato Mayfair, una food hall dentro una chiesa, se siamo dall\'altra parte.', ora: '13:00', maps: 'Shepherd Market, London' },
+        { nome: 'V&A', testo: 'La più grande collezione al mondo di arti decorative e design, gratis. Gioielli, moda e le Cast Courts con il David di Michelangelo in gesso. Se ci va, un tè nelle sale Morris.', ora: '14:30', come: 'Da St James\'s, District o Circle line fino a South Kensington, circa 25 minuti in tutto. Da Shepherd Market, Piccadilly line da Green Park a South Kensington, circa 30 minuti in tutto.', maps: 'Victoria and Albert Museum, Cromwell Road, London', sito: 'https://www.vam.ac.uk/', icona: 'soffitto' },
+        { nome: 'Albert Bridge al tramonto', testo: 'Alle 18:33 tramonta il sole e il ponte si accende con 4.000 luci. Agli ingressi c\'è ancora il cartello che chiede ai soldati di rompere il passo.', ora: '18:30', come: 'A piedi dal V&A attraverso Chelsea, circa mezz\'ora.', maps: 'Albert Bridge, London', icona: 'ponte' },
+        { nome: 'Cittie of Yorke, High Holborn', testo: 'Cena in un pub dove si beve dal 1430, nei séparé di legno della sala grande. Ho già prenotato.', ora: '20:00', come: 'In taxi. Coi mezzi circa 45 minuti, bus 170 e metropolitana.', maps: 'Cittie of Yorke, High Holborn, London', icona: 'lampada' },
+        { nome: 'Bankside Pier', testo: 'Il fiume di notte, sotto i ponti illuminati, fino a Canary Wharf.', ora: '22:00', come: 'Bus 17 fino a St Paul\'s e poi a piedi sul Millennium Bridge, una ventina di minuti; tutto a piedi circa mezz\'ora. Poi Uber Boat fino a Canary Wharf, 20 minuti. Nel weekend a Blackfriars non si ferma.', maps: 'Bankside Pier, London', icona: 'battello' }
       ]
     },
     {
       id: 'domenica', data: '2026-10-04', nome: 'Domenica 4 ottobre', colore: 'var(--dom)',
-      meteo: 'Sole e nuvole · da 15° a 20°',
+      meteo: 'Sole e nuvole · da 14° a 21°',
       fermate: [
         { nome: 'Colazione a casa', testo: 'Americano, come da regolamento.', ora: '09:00', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
-        { nome: 'Aether Coffee Lab', testo: 'Il secondo caffè lo proviamo da Aether, una torrefazione di Hackney che ha un locale qui a Canary Wharf. Io croissant e pain au chocolat li ho assaggiati, e mi sono sembrati francesi.', ora: '10:15', come: 'In Park Drive, vicino a Wood Wharf.', maps: 'Aether Coffee Lab, 11 Park Drive, London E14 9GG', icona: 'tazza' },
-        { nome: 'Longplayer', testo: 'Un faro a Trinity Buoy Wharf dove suona una musica iniziata il 31 dicembre 1999 che finirà nel 2999. Apre alle 11, è gratis.', ora: '11:00', come: 'DLR fino a East India, poi a piedi.', maps: 'Trinity Buoy Wharf, London', icona: 'faro' },
-        { nome: 'The Marksman', testo: 'Il Sunday roast, come si deve, in un pub dell\'East End. Ho prenotato.', ora: '12:30', come: 'In taxi da Trinity Buoy Wharf.', maps: 'The Marksman, 254 Hackney Road, London', icona: 'lampada' },
-        { nome: 'Columbia Road', testo: 'Il mercato dei fiori della domenica, aperto fino alle 15. I fiori li scegli tu.', ora: '14:00', come: 'A piedi, è a due passi.', maps: 'Columbia Road Flower Market, London', icona: 'fiori' },
-        { nome: 'Verso Covent Garden', testo: '', ora: '15:00', come: 'Elizabeth line da Liverpool Street a Tottenham Court Road.', maps: 'Tottenham Court Road station, London' },
-        { nome: 'Seven Dials e Neal\'s Yard', testo: 'Cortili colorati a due passi da Covent Garden.', ora: '15:30', da: 'Tottenham Court Road station, London', maps: 'Neal\'s Yard, London' },
-        { nome: 'Kiko, James Street 22', testo: 'Qui comandi tu, con tutta la calma che vuoi. La domenica apre dalle 11 alle 19.', ora: '16:00', come: 'A piedi, attraverso Covent Garden.', maps: 'KIKO Milano, 22 James Street, London' },
-        { nome: 'Goodwin\'s Court', testo: 'L\'ho scoperto un giorno di marzo che ero salito a Londra, e ho pensato a te. Dicono che abbia ispirato la Diagon Alley di Harry Potter.', ora: '17:30', come: 'A piedi, verso St Martin\'s Lane.', maps: 'Goodwin\'s Court, London' },
-        { nome: 'A casa', testo: 'Una linea sola, senza cambi.', ora: '18:00', come: 'Elizabeth line da Tottenham Court Road a Canary Wharf.', maps: 'Canary Wharf, London' },
-        { nome: 'Cena a casa', testo: 'Presto, niente sveglie tristi.', ora: '19:30', maps: 'Canary Wharf, London' }
+        { nome: 'Aether Coffee Lab', testo: 'Il secondo caffè lo proviamo da Aether, una torrefazione di Hackney che ha un locale qui a Canary Wharf. Io croissant e pain au chocolat li ho assaggiati, e mi sono sembrati francesi.', ora: '10:15', come: 'A piedi da casa, circa 10 minuti, in Park Drive vicino a Wood Wharf.', maps: 'Aether Coffee Lab, 11 Park Drive, London E14 9GG', icona: 'tazza' },
+        { nome: 'Longplayer', testo: 'Un faro a Trinity Buoy Wharf dove suona una musica iniziata il 31 dicembre 1999 che finirà nel 2999. Apre alle 11, è gratis.', ora: '11:00', come: 'Bus D3 da Churchill Place fino a Leamouth, poi a piedi. Una ventina di minuti in tutto.', maps: 'Trinity Buoy Wharf, London', icona: 'faro' },
+        { nome: 'The Marksman', testo: 'Il Sunday roast, nell\'East End. Già prenotato!', ora: '12:30', come: 'In taxi. Coi mezzi circa 50 minuti: a piedi fino a East India, DLR fino a Shadwell, Overground fino a Hoxton.', maps: 'The Marksman, 254 Hackney Road, London', sito: 'https://www.marksmanpublichouse.com/', icona: 'lampada' },
+        { nome: 'Columbia Road', testo: 'Il mercato dei fiori della domenica, aperto fino alle 15.', ora: '14:00', come: 'A piedi, 3 minuti dal Marksman.', maps: 'Columbia Road Flower Market, London', icona: 'fiori' },
+        { nome: 'Covent Garden', testo: 'La piazza, Seven Dials e Neal\'s Yard, con calma.', ora: '15:40', come: 'Bus 55 da Hackney Road fino a Tottenham Court Road, circa 40 minuti in tutto. Oppure taxi.', maps: 'Covent Garden, London' },
+        { nome: 'Kiko, James Street 22', testo: 'Qui comandi tu, con tutta la calma che vuoi. La domenica apre dalle 11 alle 19.', ora: '16:00', come: 'A piedi, siamo già lì.', maps: 'KIKO Milano, 22 James Street, London' },
+        { nome: 'Pomeriggio libero', testo: 'Quello che ci va.', ora: '17:00', maps: 'Covent Garden, London' },
+        { nome: 'Cena a casa', testo: 'Da scegliere insieme cosa ci va.', ora: '19:30', come: 'Elizabeth line da Tottenham Court Road a Canary Wharf, 13 minuti. Da Covent Garden a casa circa 35 minuti in tutto.', maps: 'Canary Wharf, London' }
       ]
     }
   ];
 
   var CARTE = [
-    { id: 'columbia-road', nome: 'Columbia Road', testo: 'Il mercato dei fiori, solo la domenica, dalle 8 alle 15.', icona: 'fiori' },
-    { id: 'longplayer', nome: 'Longplayer', testo: 'Un faro a Trinity Buoy Wharf dove suona una musica iniziata il 31 dicembre 1999 che finirà nel 2999. Sabato e domenica, dalle 11 alle 16. Gratis.', icona: 'faro' },
-    { id: 'horizon-22', nome: 'Horizon 22', testo: 'Il piano panoramico gratuito più alto di Londra. Sabato fino alle 17.' },
-    { id: 'npg', nome: 'National Portrait Gallery', testo: 'Se piove: il Portrait Award è gratuito fino al 7 ottobre.' },
+    { id: 'piano-b', nome: 'Piano B per sabato pomeriggio', testo: 'Al posto del V&A, il Sir John Soane\'s Museum, la casa più strana di Londra, gratis fino alle 17. Poi il tramonto da Waterloo Bridge e a cena a piedi.', icona: 'soffitto' },
+    { id: 'goodwins-court', nome: 'Goodwin\'s Court', testo: 'L\'ho scoperto un giorno di marzo che ero salito a Londra, e ho pensato a te. Dicono che abbia ispirato la Diagon Alley di Harry Potter. A cinque minuti da Kiko.' },
+    { id: 'chelsea-physic', nome: 'Chelsea Physic Garden', testo: 'Il giardino botanico più antico di Londra, gratis solo questo weekend, dalle 10 alle 17.', icona: 'fiori' },
     { id: 'japan-matsuri', nome: 'Japan Matsuri', testo: 'Domenica a Trafalgar Square, dalle 10 alle 20.' },
     { id: 'divano', nome: 'Divano, coperta e un film scelto da te.', breve: 'divano, coperta e film', testo: '' }
   ];
@@ -91,6 +92,14 @@
     return +p[0] * 60 + +p[1];
   }
 
+  // pulsanti sotto la scheda: Maps e, se c'è, il sito
+  function azioni(f) {
+    return '<div class="azioni">' +
+      '<a class="maps" href="' + mapsUrl(f.maps, f.da) + '" target="_blank" rel="noopener noreferrer">Apri in Maps</a>' +
+      (f.sito ? '<a class="maps" href="' + esc(f.sito) + '" target="_blank" rel="noopener noreferrer">Sito</a>' : '') +
+    '</div>';
+  }
+
   /* ---------- Render linee ---------- */
   var main = document.getElementById('linee');
   var html = '';
@@ -103,9 +112,29 @@
     html += '<ol class="fermate">';
     l.fermate.forEach(function (f, i) {
       var pid = l.id + '-' + i;
-      html += '<li class="fermata" data-min="' + minuti(f.ora) + '">' +
+      var testa = '<li class="fermata' + (f.rami ? ' bivio' : '') + '" data-min="' + minuti(f.ora) + '">' +
         '<span class="ora">' + f.ora + '</span>' +
-        '<span class="binario" aria-hidden="true"><span class="pallino"></span></span>' +
+        '<span class="binario" aria-hidden="true"><span class="pallino"></span></span>';
+      if (f.rami) {
+        html += testa +
+          '<div class="corpo"><p class="nome nome-bivio">' + esc(f.nome) + '</p>' +
+            (f.testo ? '<p class="testo testo-bivio">' + esc(f.testo) + '</p>' : '') +
+          '</div>' +
+          '<div class="rami">' + f.rami.map(function (r) {
+            return '<div class="ramo" data-ramo="' + r.id + '">' +
+              '<button class="scegli-ramo" type="button" aria-pressed="false">' +
+                '<span class="ramo-etichetta">' + esc(r.etichetta) + '</span>' +
+                '<span class="ramo-nome">' + esc(r.nome) + '</span>' +
+              '</button>' +
+              (r.testo ? '<p class="ramo-testo">' + esc(r.testo) + '</p>' : '') +
+              (r.come ? '<dl class="dettagli"><div><dt>Come ci arriviamo</dt><dd>' + esc(r.come) + '</dd></div></dl>' : '') +
+              azioni(r) +
+            '</div>';
+          }).join('') + '</div>' +
+        '</li>';
+        return;
+      }
+      html += testa +
         '<div class="corpo">' +
           '<button class="apri" type="button" aria-expanded="false" aria-controls="' + pid + '">' +
             '<span class="nome">' + esc(f.nome) + '</span>' +
@@ -118,7 +147,7 @@
               '<div><dt>Orario indicativo</dt><dd>' + f.ora + '</dd></div>' +
               (f.come ? '<div><dt>Come ci arriviamo</dt><dd>' + esc(f.come) + '</dd></div>' : '') +
             '</dl>' +
-            '<a class="maps" href="' + mapsUrl(f.maps, f.da) + '" target="_blank" rel="noopener noreferrer">Apri in Maps</a>' +
+            azioni(f) +
           '</div></div>' +
         '</div>' +
       '</li>';
@@ -133,6 +162,35 @@
     var aperto = b.getAttribute('aria-expanded') === 'true';
     b.setAttribute('aria-expanded', String(!aperto));
     b.closest('.fermata').classList.toggle('aperta', !aperto);
+  });
+
+  /* ---------- Il bivio: la scelta del ramo resta salvata ---------- */
+  var CHIAVE_BIVIO = 'london-bivio';
+  var ramoScelto = null;
+  try { ramoScelto = localStorage.getItem(CHIAVE_BIVIO); } catch (err) { ramoScelto = null; }
+
+  function mostraRamo() {
+    document.querySelectorAll('.bivio').forEach(function (bv) {
+      bv.classList.toggle('deciso', !!ramoScelto);
+      bv.querySelectorAll('.ramo').forEach(function (r) {
+        var on = r.getAttribute('data-ramo') === ramoScelto;
+        r.classList.toggle('scelto', on);
+        r.querySelector('.scegli-ramo').setAttribute('aria-pressed', String(on));
+      });
+    });
+  }
+  mostraRamo();
+
+  main.addEventListener('click', function (e) {
+    var b = e.target.closest('.scegli-ramo');
+    if (!b) return;
+    var id = b.closest('.ramo').getAttribute('data-ramo');
+    ramoScelto = ramoScelto === id ? null : id; // un secondo tocco annulla la scelta
+    try {
+      if (ramoScelto) localStorage.setItem(CHIAVE_BIVIO, ramoScelto);
+      else localStorage.removeItem(CHIAVE_BIVIO);
+    } catch (err) { /* niente */ }
+    mostraRamo();
   });
 
   /* ---------- Request stop ---------- */
@@ -274,31 +332,52 @@
   setInterval(aggiorna, 60000);
 
   /* ---------- Meteo in tempo reale (Open-Meteo) ---------- */
+  // prima il modello del Met Office, poi quello standard, altrimenti restano i valori fissi
   (function meteo() {
     if (!window.fetch) return;
-    var url = 'https://api.open-meteo.com/v1/forecast?latitude=51.5072&longitude=-0.1276' +
+    var base = 'https://api.open-meteo.com/v1/forecast?latitude=51.5072&longitude=-0.1276' +
       '&timezone=Europe%2FLondon&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max' +
       '&start_date=2026-10-02&end_date=2026-10-04';
-    var ctrl = window.AbortController ? new AbortController() : null;
-    var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 8000) : null;
-    fetch(url, ctrl ? { signal: ctrl.signal } : {})
-      .then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); })
-      .then(function (j) {
-        try {
-          var d = j.daily;
-          d.time.forEach(function (giorno, i) {
-            var max = d.temperature_2m_max[i], min = d.temperature_2m_min[i], pioggia = d.precipitation_probability_max[i];
-            if (typeof max !== 'number' || typeof min !== 'number') return;
-            var el = document.querySelector('.meteo[data-giorno="' + giorno + '"] .meteo-live');
-            if (!el) return;
-            el.innerHTML = 'max ' + Math.round(max) + '° · min ' + Math.round(min) + '°' +
-              (typeof pioggia === 'number' ? ' · pioggia ' + Math.round(pioggia) + '%' : '') +
-              ' <small>aggiornato ora</small>';
-            el.hidden = false;
-          });
-        } catch (err) { /* restano i valori fissi */ }
-      })
-      .catch(function () { /* restano i valori fissi */ })
-      .then(function () { if (timer) clearTimeout(timer); });
+
+    function oraLondra() {
+      try {
+        return new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(new Date());
+      } catch (err) { return ''; }
+    }
+
+    function scarica(url) {
+      var ctrl = window.AbortController ? new AbortController() : null;
+      var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 8000) : null;
+      return fetch(url, ctrl ? { signal: ctrl.signal } : {})
+        .then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); })
+        .then(function (j) {
+          if (timer) clearTimeout(timer);
+          var d = j && j.daily;
+          if (!d || !d.time) throw new Error('vuoto');
+          var righe = d.time.map(function (giorno, i) {
+            return { giorno: giorno, max: d.temperature_2m_max[i], min: d.temperature_2m_min[i],
+              pioggia: d.precipitation_probability_max ? d.precipitation_probability_max[i] : null };
+          }).filter(function (x) { return typeof x.max === 'number' && typeof x.min === 'number'; });
+          if (!righe.length) throw new Error('vuoto');
+          return righe;
+        }, function (err) { if (timer) clearTimeout(timer); throw err; });
+    }
+
+    function mostra(righe) {
+      var ora = oraLondra();
+      righe.forEach(function (x) {
+        var el = document.querySelector('.meteo[data-giorno="' + x.giorno + '"] .meteo-live');
+        if (!el) return;
+        el.innerHTML = 'max ' + Math.round(x.max) + '° · min ' + Math.round(x.min) + '°' +
+          (typeof x.pioggia === 'number' ? ' · pioggia ' + Math.round(x.pioggia) + '%' : '') +
+          (ora ? ' <small>aggiornato alle ' + ora + '</small>' : '');
+        el.hidden = false;
+      });
+    }
+
+    scarica(base + '&models=ukmo_seamless')
+      .catch(function () { return scarica(base); })
+      .then(mostra)
+      .catch(function () { /* restano i valori fissi */ });
   })();
 })();
