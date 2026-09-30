@@ -35,14 +35,11 @@
       meteo: 'Foschia al mattino, poi sole e nuvole · da 15° a 20°',
       fermate: [
         { nome: 'Colazione a casa', testo: '', ora: '09:00', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
-        { nome: 'Elizabeth line', testo: 'Da Canary Wharf dritti fino a Tottenham Court Road.', ora: '10:30', come: 'Elizabeth line da Canary Wharf, direzione ovest, fino a Tottenham Court Road.', maps: 'Canary Wharf Elizabeth line station' },
-        { nome: 'Seven Dials e Neal\'s Yard', testo: 'Cortili colorati a due passi da Covent Garden, sperando che il cielo non sia troppo nuvoloso.', ora: '10:50', da: 'Tottenham Court Road station, London', maps: 'Neal\'s Yard, London' },
-        { nome: 'Kiko, James Street 22', testo: 'Qui comandi tu. Aperto dalle 10 alle 20.', ora: '11:15', come: 'A piedi, attraverso Covent Garden.', maps: 'KIKO Milano, 22 James Street, London' },
-        { nome: 'Goodwin\'s Court', testo: 'L\'ho scoperto un giorno di marzo che ero salito a Londra, e ho pensato a te. Dicono che abbia ispirato la Diagon Alley di Harry Potter.', ora: '12:00', come: 'A piedi, verso St Martin\'s Lane.', maps: 'Goodwin\'s Court, London' },
-        { nome: 'Pranzo', testo: 'Vediamo insieme dove, al momento. Se no andiamo da Dishoom, un indiano buono proprio qui dietro.', ora: '12:30', come: 'A piedi, siamo già lì.', maps: 'Dishoom Covent Garden, 12 Upper St Martin\'s Lane, London' },
-        { nome: 'St James\'s Park', testo: 'Due passi nel parco e, se ce la facciamo, andiamo a vedere i pellicani che mangiano vicino a Duck Island Cottage, di solito tra le 14:30 e le 15.', ora: '14:00', come: 'A piedi, da Trafalgar Square lungo The Mall.', maps: 'Duck Island Cottage, St James\'s Park, London', icona: 'pellicano' },
-        { nome: 'Chelsea Physic Garden', testo: 'Il giardino botanico più antico di Londra. Di solito il sabato è chiuso, questo weekend apre gratis dalle 10 alle 17, ultimo ingresso alle 16:30. Proviamo, se c\'è posto.', ora: '15:30', come: 'District o Circle line da St James\'s Park a Sloane Square, poi a piedi.', maps: 'Chelsea Physic Garden, London', icona: 'fiori' },
-        { nome: 'Albert Bridge al tramonto', testo: 'Alle 18:33 tramonta il sole e il ponte si accende con 4.000 luci. Agli ingressi c\'è ancora il cartello che chiede ai soldati di rompere il passo.', ora: '18:30', come: 'A piedi lungo il fiume, sul Chelsea Embankment.', maps: 'Albert Bridge, London', icona: 'ponte' },
+        { nome: 'Elizabeth line', testo: 'Da Canary Wharf dritti fino a Bond Street.', ora: '09:50', come: 'Elizabeth line da Canary Wharf, uscita Davies Street.', maps: 'Bond Street station Davies Street entrance, London' },
+        { nome: 'La svendita', testo: 'Qui comandi tu. Primo piano, aperta dalle 10 alle 17.', ora: '10:15', come: 'A piedi, è davanti all\'uscita.', maps: '58 Davies Street, London W1K 5JF' },
+        { nome: 'St James\'s Park', testo: 'Ci torniamo, stavolta con calma. Pranzo al parco, a un chiosco o dove ci va.', ora: '12:30', come: 'A piedi da Mayfair, attraverso Green Park.', maps: 'St James\'s Park, London' },
+        { nome: 'V&A', testo: 'La più grande collezione al mondo di arti decorative e design, gratis. Gioielli, moda e le Cast Courts con il David di Michelangelo in gesso. Se ci va, un tè nelle sale Morris.', ora: '14:30', come: 'District o Circle line da St James\'s Park a South Kensington.', maps: 'Victoria and Albert Museum, Cromwell Road, London', icona: 'soffitto' },
+        { nome: 'Albert Bridge al tramonto', testo: 'Alle 18:33 tramonta il sole e il ponte si accende con 4.000 luci. Agli ingressi c\'è ancora il cartello che chiede ai soldati di rompere il passo.', ora: '18:30', come: 'A piedi da South Kensington attraverso Chelsea, fino al Chelsea Embankment.', maps: 'Albert Bridge, London', icona: 'ponte' },
         { nome: 'Cittie of Yorke, High Holborn', testo: 'Cena in un pub dove si beve dal 1430, nei séparé di legno della sala grande. Ho già prenotato.', ora: '20:00', come: 'In taxi.', maps: 'Cittie of Yorke, High Holborn, London', icona: 'lampada' },
         { nome: 'A casa in battello', testo: 'Il fiume di notte, sotto i ponti illuminati, fino a Canary Wharf.', ora: '22:00', come: 'Fino al molo di Bankside, dall\'altra parte del Millennium Bridge, poi Uber Boat fino a Canary Wharf. Nel weekend a Blackfriars non si ferma.', maps: 'Bankside Pier, London', icona: 'battello' }
       ]
@@ -51,12 +48,17 @@
       id: 'domenica', data: '2026-10-04', nome: 'Domenica 4 ottobre', colore: 'var(--dom)',
       meteo: 'Sole e nuvole · da 15° a 20°',
       fermate: [
-        { nome: 'Primo caffè a casa', testo: 'Americano, come da regolamento.', ora: '09:30', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
-        { nome: 'Aether Coffee Lab', testo: 'Il secondo caffè lo proviamo da Aether, una torrefazione di Hackney che ha un locale qui a Canary Wharf. Io croissant e pain au chocolat li ho assaggiati, e mi sono sembrati francesi.', ora: '10:30', come: 'In Park Drive, vicino a Wood Wharf.', maps: 'Aether Coffee Lab, 11 Park Drive, London E14 9GG', icona: 'tazza' },
-        { nome: 'Island Gardens', testo: 'Il giardino in fondo all\'Isle of Dogs, con Greenwich proprio di fronte, dall\'altra parte del fiume.', ora: '11:45', come: 'In DLR, direzione Lewisham, fino a Island Gardens.', maps: 'Island Gardens, London' },
-        { nome: 'Il tunnel', testo: 'A piedi sotto il Tamigi, dal 1902, e si esce a Greenwich.', ora: '12:00', come: 'L\'ingresso è la cupola dentro Island Gardens.', maps: 'Greenwich Foot Tunnel, London' },
-        { nome: 'Pomeriggio libero', testo: 'Greenwich, il divano, oppure una delle fermate a richiesta.', ora: '12:30', come: 'Dipende da cosa scegli.', maps: 'Greenwich, London' },
-        { nome: 'Cena libera', testo: 'Decidiamo al momento.', ora: '19:30', maps: 'Canary Wharf, London' }
+        { nome: 'Colazione a casa', testo: 'Americano, come da regolamento.', ora: '09:00', come: 'Siamo a casa.', maps: 'Canary Wharf, London', icona: 'tazza' },
+        { nome: 'Aether Coffee Lab', testo: 'Il secondo caffè lo proviamo da Aether, una torrefazione di Hackney che ha un locale qui a Canary Wharf. Io croissant e pain au chocolat li ho assaggiati, e mi sono sembrati francesi.', ora: '10:15', come: 'In Park Drive, vicino a Wood Wharf.', maps: 'Aether Coffee Lab, 11 Park Drive, London E14 9GG', icona: 'tazza' },
+        { nome: 'Longplayer', testo: 'Un faro a Trinity Buoy Wharf dove suona una musica iniziata il 31 dicembre 1999 che finirà nel 2999. Apre alle 11, è gratis.', ora: '11:00', come: 'DLR fino a East India, poi a piedi.', maps: 'Trinity Buoy Wharf, London', icona: 'faro' },
+        { nome: 'The Marksman', testo: 'Il Sunday roast, come si deve, in un pub dell\'East End. Ho prenotato.', ora: '12:30', come: 'In taxi da Trinity Buoy Wharf.', maps: 'The Marksman, 254 Hackney Road, London', icona: 'lampada' },
+        { nome: 'Columbia Road', testo: 'Il mercato dei fiori della domenica, aperto fino alle 15. I fiori li scegli tu.', ora: '14:00', come: 'A piedi, è a due passi.', maps: 'Columbia Road Flower Market, London', icona: 'fiori' },
+        { nome: 'Verso Covent Garden', testo: '', ora: '15:00', come: 'Elizabeth line da Liverpool Street a Tottenham Court Road.', maps: 'Tottenham Court Road station, London' },
+        { nome: 'Seven Dials e Neal\'s Yard', testo: 'Cortili colorati a due passi da Covent Garden.', ora: '15:30', da: 'Tottenham Court Road station, London', maps: 'Neal\'s Yard, London' },
+        { nome: 'Kiko, James Street 22', testo: 'Qui comandi tu, con tutta la calma che vuoi. La domenica apre dalle 11 alle 19.', ora: '16:00', come: 'A piedi, attraverso Covent Garden.', maps: 'KIKO Milano, 22 James Street, London' },
+        { nome: 'Goodwin\'s Court', testo: 'L\'ho scoperto un giorno di marzo che ero salito a Londra, e ho pensato a te. Dicono che abbia ispirato la Diagon Alley di Harry Potter.', ora: '17:30', come: 'A piedi, verso St Martin\'s Lane.', maps: 'Goodwin\'s Court, London' },
+        { nome: 'A casa', testo: 'Una linea sola, senza cambi.', ora: '18:00', come: 'Elizabeth line da Tottenham Court Road a Canary Wharf.', maps: 'Canary Wharf, London' },
+        { nome: 'Cena a casa', testo: 'Presto, niente sveglie tristi.', ora: '19:30', maps: 'Canary Wharf, London' }
       ]
     }
   ];
